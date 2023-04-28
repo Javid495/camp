@@ -25,9 +25,9 @@ function viewHTML(verDatos){
         divContainer.innerHTML=`
         <div class="card"id="modal" mm="hola" >
             <div class="card-body">
-              <h5 class="card-title">${tribu}</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">${idTribu}</h6>
-              <p class="card-text">${puntos}</p>
+              <h5 class="card-title">Nombre de la tribu: ${tribu}</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Id de la tribu: ${idTribu}</h6>
+              <p class="card-text"> Puntos: ${puntos}</p>
               
              <div id="tarjetass" class="d-flex gap-3">
                       
@@ -42,92 +42,15 @@ function viewHTML(verDatos){
             <div class="card" style="width: 18rem;">
             <img src="${img}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">${nombre}</h5>
+              <h5 class="card-title">Nombre: ${nombre}</h5>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">${id}</li>
-              <li class="list-group-item">${edad}</li>
-              <li class="list-group-item">${rol}</li>
-              <li class="list-group-item">${nivelIngles}</li>
+              <li class="list-group-item">Id: ${id}</li>
+              <li class="list-group-item">Edad: ${edad}</li>
+              <li class="list-group-item">Rol: ${rol}</li>
+              <li class="list-group-item">Nivel de ingles: ${nivelIngles}</li>
             </ul>
-          </div>
-
-            
-            `
-
-
-
-         
-
-
-          })
-      
-        
-
-
-
-
-        
-       
-        
+          </div>`
+          })   
       });
-}
-
-/* const padre = document.querySelector('#gola')
-padre.addEventListener("click", tajeta)
-function tajeta(e){
-    if(e.target){
-      console.log(e.target);
-      const camperss = e.target.getAttribute('mm')
-      console.log(camperss);
-
-
-
-
-    }
-    
-
-
-
-
-} */
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function reCampers(verInfo){
-    const tarjetas = document.querySelector("#tarjeta");
-    verInfo.forEach(camper =>{
-      const {id,nombre,edad,nivelIngles,rol} = camper
-      console.log(camper)
-/*       tarjetas.innerHTML=`
-        <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${nombre}</h5>
-            <p>${id}</p>
-            <p>${edad}</p>
-            <p>${nivelIngles}</p>
-            <p>${rol}</p>
-          </div>
-        </div>
-        `   */
-/*     }) 
-
-} 
-   */      
+}   
